@@ -1,16 +1,52 @@
-# cote_alerte
+# Côte Alerte
 
-A new Flutter project.
+## Description
+Côte Alerte est une application mobile développée avec Flutter qui permet de surveiller et d'alerter les utilisateurs sur les conditions côtières. L'application utilise des technologies avancées comme la détection d'objets via Roboflow pour analyser les conditions maritimes.
 
-## Getting Started
+## Fonctionnalités
+- 📍 Géolocalisation en temps réel
+- 📸 Capture et analyse d'images
+- 🗺️ Intégration de cartes interactives
+- 🔔 Système d'alertes personnalisées
+- 💾 Stockage local des données
+- 📱 Interface utilisateur intuitive
 
-This project is a starting point for a Flutter application.
+## Prérequis
+- Flutter SDK (version ^3.7.2)
+- Dart SDK
+- Android Studio / Xcode (pour le développement)
+- Un appareil Android/iOS ou un émulateur
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clonez le dépôt :
+```bash
+git clone [URL_DU_REPO]
+cd cote_alerte
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Installez les dépendances :
+```bash
+flutter pub get
+```
+
+3. Configurez la clé API Roboflow :
+   - Créez un fichier `lib/config/api_config.dart`
+   - Ajoutez votre clé API Roboflow
+
+4. Lancez l'application :
+```bash
+flutter run
+```
+
+## Dépendances principales
+- `flutter_map` : ^5.0.0 - Pour l'affichage des cartes
+- `geolocator` : ^10.0.0 - Pour la géolocalisation
+- `camera` : ^0.10.5+3 - Pour l'accès à la caméra
+- `sqflite` : ^2.3.2 - Pour le stockage local
+- `http` : ^1.1.0 - Pour les requêtes réseau et l'intégration avec Roboflow
+- `shared_preferences` : ^2.2.2 - Pour le stockage des préférences
+- `permission_handler` : ^10.4.0 - Pour la gestion des permissions
+
+## Structure du projet
+```
